@@ -1,7 +1,7 @@
 import * as React from 'react';
 import dynamic from 'next/dynamic';
 
-const QrReader = dynamic(() => import('react-qr-reader'));
+const QrReader = dynamic(() => import('react-qr-reader'), { ssr: false });
 
 const delay = 500;
 const QrReaderComponent = () => {
